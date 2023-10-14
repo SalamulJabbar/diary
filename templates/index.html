@@ -45,6 +45,7 @@
             let content = articles[i]['content'];
             let file = articles[i]['file'];
             let profile = articles[i]['profile'];
+            let mytime = articles[i]['mytime'];
             let temp_html = ` 
             <div class="col-4">
           <div class="card">
@@ -61,7 +62,7 @@
             />
               <h5 class="card-title">${title}</h5>
               <p class="card-text">${content}</p>
-              <h6 class="card-subtitle mb-2 text-muted">Always be Happy</h6>
+              <h6 class="card-subtitle mb-2 text-muted id="time"">${mytime}</h6>
             </div>
           </div>
         </div>
@@ -104,6 +105,8 @@
         }
       });
     }
+
+    
   </script>
   <style>
     .card>img {
